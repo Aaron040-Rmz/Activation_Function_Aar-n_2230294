@@ -1,0 +1,12 @@
+# ignora todo por defecto
+/* 
+
+venv/
+
+# instancias a no ignorar
+!/src/
+!/README.md
+!/main.py
+!/.gitignore
+
+
