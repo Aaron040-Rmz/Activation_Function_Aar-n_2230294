@@ -8,5 +8,6 @@ venv/
 !/README.md
 !/main.py
 !/.gitignore
+!/Requirements.txt
 
 
