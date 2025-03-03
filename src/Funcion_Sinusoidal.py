@@ -14,7 +14,7 @@ def graficar_sinusoidal(ax):
     y = sinusoidal(x)
 
   
-    ax.plot(x, y, label="Sinusoidal", color="gray")
+    ax.plot(x, y, label="Sinusoidal", color="lime")
     ax.set_title("Función Sinusoidal")
     ax.set_xlabel("x")
     ax.set_ylabel("sinusoidal(x)")

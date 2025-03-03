@@ -14,7 +14,7 @@ def graficar_lineal_tramos(ax):
     y = lineal_tramos(x)
 
  
-    ax.plot(x, y, label="Lineal a Tramos", color="pink")
+    ax.plot(x, y, label="Lineal a Tramos", color="magenta")
     ax.set_title("Función Lineal a Tramos")
     ax.set_xlabel("x")
     ax.set_ylabel("lineal_tramos(x)")

@@ -15,9 +15,9 @@ def graficar_tanh(ax):
 
 
     ax.plot(x, y, label="tanh", color="red")
-    ax.set_title("Función tanh")
+    ax.set_title("Función TanH")
     ax.set_xlabel("x")
-    ax.set_ylabel("tanh(x)")
+    ax.set_ylabel("TanH(x)")
     ax.grid(True)
     ax.legend()
     
