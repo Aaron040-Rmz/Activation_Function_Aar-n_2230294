@@ -1,9 +1,8 @@
 # ignora todo por defecto
-/* 
 
 venv/
-/*__pycache__/
-/*__init__.py
+__pycache__/
+__init__.py
 
 # instancias a no ignorar
 !/src/
