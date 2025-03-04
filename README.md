@@ -49,7 +49,7 @@ TAREA_1/
 └── Requirements.txt                 # Lista de dependencias
 ```
 
-## 🛠️ Funcionalidades
+
 ## 🛠️ Funcionalidades
 
 El proyecto incluye la implementación y gráficas de las siguientes **ocho funciones de activación**:
@@ -96,11 +96,20 @@ Sigue estos pasos para clonar el repositorio, instalar las dependencias y genera
 Abre una terminal y ejecuta el siguiente comando para clonar el repositorio en tu computadora:
 
 ```bash
-git clone https://github.com/tu-usuario/TAREA_1.git
+git clone https://github.com/Aaron040-Rmz/Activation_Function_Aar-n_2230294
 ```
-Luego, accede a la carpeta del proyecto:
-```bash
-cd TAREA_1
+### Cree un nuevo entorno virtual
+Se recomienda tener el entorno virtual generado en la carpeta principal para un fácil acceso, su activación y desactivación se realiza de la siguiente forma:
+
+En PowerShell:
+```
+.\nombre_del_entorno\Scripts\Activate
+deactivate
+```
+En Unix:
+```
+source nombre_del_entorno/bin/activate
+deactivate
 ```
 ### Instala las dependencias 📦:
 Asegúrate de tener instaladas las bibliotecas necesarias. Ejecuta el siguiente comando para instalarlas:
@@ -120,7 +129,7 @@ Puedes navegar entre las gráficas usando los botones de la ventana.
 Si quieres guardar las gráficas, modifica el código en `main.py` para usar `plt.savefig("ruta/de/la/grafica.png")`.
 
 ## 🛠️ Tecnologías Utilizadas
- -**Python**: Lenguaje de programación principal.
+ -**Python**: Lenguaje de programación principal en este caso la version 3.12.4.
  -**NumPy**: Para cálculos numéricos.
  -**Matplotlib**: Para la generación de gráficas.
 
