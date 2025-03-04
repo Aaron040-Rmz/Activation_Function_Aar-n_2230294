@@ -1,20 +1,16 @@
-# ignora todo por defecto
-/* 
-
-venv/
-# Ignorar cache de Python
+# Ignorar la carpeta __pycache__ en cualquier nivel del proyecto
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-/*__init__.py
+# Ignorar la carpeta venv (entorno virtual)
+venv/
 
-# instancias a no ignorar
+# No ignorar estos archivos y carpetas
 !/src/
 !/README.md
 !/main.py
 !/.gitignore
 !/Requirements.txt
-
 
