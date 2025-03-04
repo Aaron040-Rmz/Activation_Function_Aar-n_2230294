@@ -23,14 +23,14 @@ Para ejecutar este proyecto, necesitas tener instaladas las siguientes bibliotec
 - **NumPy**: Para cálculos numéricos y manejo de arreglos.
 - **Matplotlib**: Para la generación de gráficas.
 
-Puedes instalar estas dependencias utilizando `pip`:
+Puedes instalar estas dependencias utilizando `pip`: 
 
-```bash
+```
 pip install numpy matplotlib
-
-🗂️ Estructura del Proyecto
+```
+## 🗂️ Estructura del Proyecto
 El proyecto está organizado de la siguiente manera:
-
+```
 TAREA_1/
 │
 ├── src/
@@ -47,101 +47,83 @@ TAREA_1/
 ├── main.py                          # Script principal para generar las gráficas
 ├── README.md                        # Este archivo
 └── Requirements.txt                 # Lista de dependencias
+```
 
-🛠️ Funcionalidades
-El proyecto incluye la implementación y gráficas de las siguientes ocho funciones de activación:
+## 🛠️ Funcionalidades
+## 🛠️ Funcionalidades
 
-Función Escalón (Step Function):
+El proyecto incluye la implementación y gráficas de las siguientes **ocho funciones de activación**:
 
-Función: Devuelve 1 si el valor de entrada es mayor o igual a 0; de lo contrario, devuelve 0.
+1. **Función Escalón (Step Function)**:
+   - **Función**: Devuelve 1 si el valor de entrada es mayor o igual a 0; de lo contrario, devuelve 0.
+   - **Derivada**: No está definida en x = 0; en otros puntos, es 0.
 
-Derivada: No está definida en x = 0; en otros puntos, es 0.
+2. **Función Sigmoide (Sigmoid Function)**:
+   - **Función**: Mapea cualquier valor a un rango entre 0 y 1.
+   - **Derivada**: `sigmoide(x) * (1 - sigmoide(x))`.
 
-Función Sigmoide (Sigmoid Function):
+3. **Función Tangente Hiperbólica (TanH)**:
+   - **Función**: Mapea cualquier valor a un rango entre -1 y 1.
+   - **Derivada**: `1 - tanh(x)^2`.
 
-Función: Mapea cualquier valor a un rango entre 0 y 1.
+4. **Función ReLU (Rectified Linear Unit)**:
+   - **Función**: Devuelve 0 si el valor de entrada es menor que 0; de lo contrario, devuelve el valor de entrada.
+   - **Derivada**: 0 si x < 0; 1 si x >= 0.
 
-Derivada: sigmoide(x) * (1 - sigmoide(x)).
+5. **Función Lineal a Tramos (Piecewise Linear Function)**:
+   - **Función**: Devuelve 0 si x < 0; x si 0 <= x <= 1; 1 si x > 1.
+   - **Derivada**: 0 si x < 0; 1 si 0 <= x <= 1; 0 si x > 1.
 
-Función Tangente Hiperbólica (TanH):
+6. **Función Gaussiana (Gaussian Function)**:
+   - **Función**: `exp(-x^2)`.
+   - **Derivada**: `-2 * x * exp(-x^2)`.   
 
-Función: Mapea cualquier valor a un rango entre -1 y 1.
+7. **Función Sinusoidal (Sinusoidal Function)**:
+   - **Función**: `sin(x)`.
+   - **Derivada**: `cos(x)`.
 
-Derivada: 1 - tanh(x)^2.
+8. **Función Identidad (Identity Function)**:
+   - **Función**: Devuelve el mismo valor de entrada.
+   - **Derivada**: 1 para todos los valores de x.
 
-Función ReLU (Rectified Linear Unit):
 
-Función: Devuelve 0 si el valor de entrada es menor que 0; de lo contrario, devuelve el valor de entrada.
 
-Derivada: 0 si x < 0; 1 si x >= 0.
-
-Función Lineal a Tramos (Piecewise Linear Function):
-
-Función: Devuelve 0 si x < 0; x si 0 <= x <= 1; 1 si x > 1.
-
-Derivada: 0 si x < 0; 1 si 0 <= x <= 1; 0 si x > 1.
-
-Función Gaussiana (Gaussian Function):
-
-Función: exp(-x^2).
-
-Derivada: -2 * x * exp(-x^2).
-
-Función Sinusoidal (Sinusoidal Function):
-
-Función: sin(x).
-
-Derivada: cos(x).
-
-Función Identidad (Identity Function):
-
-Función: Devuelve el mismo valor de entrada.
-
-Derivada: 1 para todos los valores de x.
-
-🚀 Pasos para Ejecutar el Repositorio y Ver las Gráficas
+## 🚀 Pasos para Ejecutar el Repositorio y Ver las Gráficas
  
 Sigue estos pasos para clonar el repositorio, instalar las dependencias y generar las gráficas:
 
-Clona el repositorio 🖥️:
+### Clona el repositorio 🖥️:
 Abre una terminal y ejecuta el siguiente comando para clonar el repositorio en tu computadora:
 
-bash
-Copy
+```bash
 git clone https://github.com/tu-usuario/TAREA_1.git
+```
 Luego, accede a la carpeta del proyecto:
-
-bash
-Copy
+```bash
 cd TAREA_1
-Instala las dependencias 📦:
+```
+### Instala las dependencias 📦:
 Asegúrate de tener instaladas las bibliotecas necesarias. Ejecuta el siguiente comando para instalarlas:
 
-bash
-Copy
+```bash
 pip install -r Requirements.txt
-Ejecuta el script principal 🚀:
+```
+### Ejecuta el script principal 🚀:
 Para generar las gráficas de las funciones de activación y sus derivadas, ejecuta el siguiente comando:
-
-bash
-Copy
+```bash
 python main.py
-Visualiza las gráficas 📊:
+```
+### Visualiza las gráficas 📊:
 
 Las gráficas se mostrarán en una ventana emergente.
-
 Puedes navegar entre las gráficas usando los botones de la ventana.
+Si quieres guardar las gráficas, modifica el código en `main.py` para usar `plt.savefig("ruta/de/la/grafica.png")`.
 
-Si quieres guardar las gráficas, modifica el código en main.py para usar plt.savefig("ruta/de/la/grafica.png").
+## 🛠️ Tecnologías Utilizadas
+ -**Python**: Lenguaje de programación principal.
+ -**NumPy**: Para cálculos numéricos.
+ -**Matplotlib**: Para la generación de gráficas.
 
-
-🛠️ Tecnologías Utilizadas
-Python: Lenguaje de programación principal.
-
-NumPy: Para cálculos numéricos.
-
-Matplotlib: Para la generación de gráficas.
-
-✨ Notas adicionales
+## ✨ Notas adicionales
 
 Muchas gracias por leer mi primer README, te deseo un muy buen día 😊
