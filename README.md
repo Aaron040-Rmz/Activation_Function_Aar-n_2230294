@@ -30,6 +30,7 @@ pip install numpy matplotlib
 ```
 ## 🗂️ Estructura del Proyecto
 El proyecto está organizado de la siguiente manera:
+
 ```
 TAREA_1/
 │
@@ -130,7 +131,9 @@ Si quieres guardar las gráficas, modifica el código en `main.py` para usar `pl
 
 ## 🛠️ Tecnologías Utilizadas
  -**Python**: Lenguaje de programación principal en este caso la version 3.12.4.
+ 
  -**NumPy**: Para cálculos numéricos.
+ 
  -**Matplotlib**: Para la generación de gráficas.
 
 ## ✨ Notas adicionales
